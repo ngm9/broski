@@ -17,4 +17,7 @@ def run():
     inputs = {
         'repo': repo
     }
-    ProjectScoperCrew().crew().kickoff(inputs=inputs)
+    result = ProjectScoperCrew().crew().kickoff(inputs=inputs)
+    with open('result.md', 'w') as file:
+      file.write(str(result))
+    return result
