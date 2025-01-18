@@ -1,0 +1,18 @@
+finding_resources_task:
+  description: >
+    Identify a list of resources that help young professionals learn and get better at {skill}
+    The resources must contain: 5 Youtube videos, 5 discord communities, 5 substacks or newslettersand 5 online courses
+    All these resources must be the best for learning {skill}
+    The Youtube tutorial must have two important properties:
+        a) The parent Youtube channel must be among Top 10 subscriber count for that given skill
+        b) The video must be among Top 10 views for that given skill. Remember to return the youtube video link and not the channel link.
+    The discord community must be among Top 10 active member count for learning {skill}
+    The substacks must have top 10 subscriber count for learning {skill}
+    The online course must have top 10 rating for learning {skill}
+    Use youtube search, discord search, substack search and online course search to find the resources. Accept only reputed sources when shortlisting. 
+    The resources MUST be contain actionable content to learning {skill} specifically
+
+  expected_output: >
+    A list of 3 Youtube tutorial videos (not the channel links), 3 discord communities, 3 substacks and 3 online courses
+    Each resource must have a title, a 2 line description on why it is relevant to that skill and a link to the resource
+    At the end output a list of the tools used and the credits used for those resources so I can do budgeting correctly

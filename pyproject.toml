@@ -1,17 +1,17 @@
 [tool.poetry]
-name = "project-scoper"
+name = "project_broski"
 version = "0.1.0"
-description = ""
-authors = ["shadi-fsai <163780314+shadi-fsai@users.noreply.github.com>"]
+description = "An AI Agent that helps find credible resources to focus and improve a specific topic"
+authors = ["Naman Muley <naman.g.muley@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.12.2"
+python = "3.10.16"
 crewai = "^0.70.1"
 crewai-tools = "^0.12.0"
 
 [tool.poetry.scripts]
-project_scoper = "project_scoper.main:run"
+project_broski = "project_broski.main:run"
 
 [build-system]
 requires = ["poetry-core"]
