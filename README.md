@@ -1,7 +1,9 @@
-# project-scoper
-Scope projects for interns from open source issues
+# project-broski
+Find Youtube tutorials, discord communities, substacks, newsletters and FREE online courses to improve specific skills
 
-1. Install pipx and poetry
+# Get started
+1. Install poetry
 2. Create a .env from example.env with your API keys
-3. Execute 'poetry run project_scoper'
-4. Provide the url for open source project repo you want to produce projects for
+3. Execute 'poetry run broski'
+4. Provide a specific skill that you're looking to learn e.g. "using unsloth to finetune models", "Async concepts in Python"
+
