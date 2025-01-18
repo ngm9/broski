@@ -7,3 +7,5 @@ Find Youtube tutorials, discord communities, substacks, newsletters and FREE onl
 3. Execute 'poetry run broski'
 4. Provide a specific skill that you're looking to learn e.g. "using unsloth to finetune models", "Async concepts in Python"
 
+# Credits
+Forked from Shadi Copty's excellent project-scoper (https://github.com/shadi-fsai/project-scoper/)
