@@ -1,0 +1,21 @@
+```json
+{
+    "question_id": "36f62e18-3f0b-11ee-bf46-0242ac120002",
+    "type": "AudioInput",
+    "created_at": "2023-10-15T12:00:00Z",
+    "language_agnostic": false,
+    "question_blob_en": {
+        "question": "You are part of a development team working on a scalable web application that involves a RESTful API built with Node.js and Express.js. The application is designed to handle high-volume traffic and large datasets. Below is a simplified version of one part of the codebase.\n\nFile: `app.js`\n\n```javascript\nconst express = require('express');\nconst app = express();\nconst dataRouter = require('./routes/data');\n\napp.use('/data', dataRouter);\n\napp.listen(3000, () => {\n  console.log('Server running on port 3000');\n});\n```\n\nFile: `routes/data.js`\n\n```javascript\nconst express = require('express');\nconst router = express.Router();\nconst dataController = require('../controllers/dataController');\n\nrouter.get('/', dataController.getData);\n\nmodule.exports = router;\n```\n\nFile: `controllers/dataController.js`\n\n```javascript\nconst dataService = require('../services/dataService');\n\nexports.getData = async (req, res) => {\n  try {\n    const data = await dataService.fetchData();\n    res.status(200).json(data);\n  } catch (error) {\n    res.status(500).json({ error: 'Internal Server Error' });\n  }\n};\n```\n\nFile: `services/dataService.js`\n\n```javascript\nconst fetchData = async () => {\n  // Simulating database call\n  return await new Promise((resolve, reject) => {\n    setTimeout(() => {\n      const data = [{ id: 1, value: 'Sample Data' }];\n      if (data) {\n        resolve(data);\n      } else {\n        reject('No Data Found');\n      }\n    }, 1000);\n  });\n};\n\nmodule.exports = {\n  fetchData\n};\n```\n\nIn a scenario where the application is expected to scale for millions of requests and handle large data efficiently, identify areas in the code that may lead to performance bottlenecks or scalability issues. Suggest improvements to ensure the application can handle future growth effectively.",
+        "code": "",
+        "answer": "A good answer must include an analysis pointing out the use of `setTimout` in `fetchData` as a potential bottleneck and recommend asynchronous database operations that are more efficient. Mention the importance of caching strategies and suggest using tools like Redis for caching frequently accessed data. Address potential issues with error handling and suggest systematic monitoring including logging for better maintenance.",
+        "hints": "Consider how asynchronous operations and caching could improve scalability.",
+        "definitions": {
+            "RESTful API": "An architectural style for designing networked applications using HTTP requests.",
+            "Asynchronous": "Operations that occur independently of the main program flow, allowing for non-blocking execution."
+        }
+    },
+    "criterias": [
+        "bd15a4af-bf72-4486-9148-ef3a8e65bcaf"
+    ]
+}
+```

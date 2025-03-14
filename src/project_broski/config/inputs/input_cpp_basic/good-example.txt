@@ -1,0 +1,57 @@
+Example 1:
+================
+The following is a good example because:  This question effectively tests the candidate's understanding of CSS properties and their impact on styling behaviors. It evaluates attention to detail and knowledge of shorthand properties, which can lead to unintended side effects. Debugging subtle issues like these is common in real-world scenarios, making it a valuable question for assessing practical skills."
+{
+    "question_id": "<uuid>",
+    "type": "AudioInput",
+    "kind": "CodeScenario",
+    "language_agnostic": False,  
+    "question_blob_en":
+    {
+        "question": "Given the following HTML and CSS snippet, the hover effect on the button doesn't seem to work. Identify the issue and suggest a fix. \n\n```html\n<button class=\"btn\">Click Me</button>\n```\n\n```css\n.btn {\n  padding: 10px 20px;\n  background-color: blue;\n  color: white;\n  transition: background-color 0.3s ease;\n}\n\n.btn:hover {\n  background: darkblue;\n}\n```\n\n. What is causing the hover effect to fail, and how would you resolve this issue?",
+        "answer": "The issue is due to using the `background` shorthand property in the hover state instead of `background-color`. The shorthand can sometimes reset other background properties unintentionally. Changing it to `background-color: darkblue;` will resolve the issue and match the initial state.",
+    }     
+    "criterias": ["<competency_id>"],
+    
+}
+
+Example 2:
+================
+The following is a good example because:  Appropriate for the proficiency required i.e. a beginner, very specific and simple in it's ask, requiring application of the fundamental concept of dictionaries and lists"
+{
+    "question_id": "<uuid>",
+    "type": "AudioInput",
+    "kind": "CodeScenario",
+    "language_agnostic": False,
+    "question_blob_en":
+    {
+        "hints": "Consider how the data structure handles frequent retrieval of items.",
+        "answer": "A better approach might be to use a dictionary of dictionaries using user names as keys. This allows for O(1) average time complexity for lookups compared to O(n) for lists.",
+        "question": "In the following Python code, identify and explain any possible issues with the use of data structures to store and retrieve information:\n\n```python\nuser_data = [\n    {'name': 'Alice', 'age': 25},\n    {'name': 'Bob', 'age': 30},\n    {'name': 'Charlie', 'age': 35}\n]\n\nfor user in user_data:\n    if user['age'] > 20:\n        print(f\"{user['name']} is older than 20.\")\n```\nHow can the organization of data structures improve for frequent lookup operations?",
+        "definitions": {
+            "Time Complexity": "A measure of the amount of computational time that a program takes to run."
+        }
+    }
+    "criterias": ["<competency_id>"],
+}
+
+Example 3:
+================
+The following is a good example because:  Appropriate for the proficiency required i.e. a beginner, requiring application of thought to identify the scope of variables and their locations and yet is specific and simple"
+{
+    
+    "type": "AudioInput",
+    "kind": "CodeScenario",
+    "language_agnostic": False,
+    "question_id": "<uuid>",
+    "question_blob_en":
+    {
+        "hints": "Consider the scope of variables and their locations.",
+        "answer": "Remove the `print(total)` line because `total` is local to the `calculate_sum` function and not defined in the global scope.",
+        "question": "Analyze the following snippet that attempts to calculate the sum of numbers using incorrect variable scope. Identify the problem and suggest a correction.\n\n```python\ndef calculate_sum(n):\n    total = 0\n    for i in range(n):\n        total += i\n    return total\n\nprint(calculate_sum(5))\nprint(total)\n```\nWhat should be done to prevent errors related to variable scope?",
+        "definitions": {
+            "Scope": "The region of a program where a variable is recognized or accessible."
+        }
+    }
+    "criterias": ["<competency_id>"],
+}

@@ -1,0 +1,32 @@
+```json
+{
+  "company": {
+    "main_business": "Providing a full spectrum of computing and information technology services.",
+    "culture": "Open, remote, and agile work environment focusing on technology, people, process, and strategy.",
+    "mission": "To establish as the best choice in computing and IT by offering comprehensive services while remaining on a growth trajectory."
+  },
+  "role": {
+    "key_responsibilities": [
+      "Collaborate with front-end developers, product managers, and stakeholders to design and implement efficient back-end solutions.",
+      "Develop and maintain server-side logic with Node.js and Express.js ensuring application performance and responsiveness.",
+      "Design and implement RESTful APIs for seamless front-end integration.",
+      "Implement security and data protection following industry standards and best practices.",
+      "Optimize applications for maximum speed and scalability and address bottlenecks and performance issues.",
+      "Work with DevOps teams to enhance deployment and monitoring processes.",
+      "Participate in code reviews providing constructive feedback for code quality and maintainability.",
+      "Troubleshoot and debug offering timely resolutions to technical issues.",
+      "Mentor junior developers fostering skill growth and knowledge sharing."
+    ],
+    "required_skills": [
+      "Proficiency in Node.js and Express.js.",
+      "Experience in designing and implementing RESTful APIs.",
+      "Strong understanding of security and data protection principles.",
+      "Ability to optimize applications for speed and scalability.",
+      "Experience in collaborating with DevOps teams.",
+      "Experience in conducting code reviews and mentoring developers.",
+      "Problem-solving skills for troubleshooting and debugging."
+    ],
+    "experience_level": "Intermediate to senior-level, with a focus on collaboration, optimization, security, and mentorship."
+  }
+}
+```

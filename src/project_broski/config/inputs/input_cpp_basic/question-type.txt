@@ -1,0 +1,2 @@
+"AudioInput"
+AudioInput type of questions must keep in mind that the user will be asked to provide an audio answer. The evaluation of the audio answer will need a clear and specific ask towards the end of the question

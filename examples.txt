@@ -1,0 +1,45 @@
+1. **Syntax and Data Types**: 
+   - Describe the differences between the following data types: `int`, `float`, `double`, `char`, and `bool` in C++. How would you decide which one to use in a variable declaration?
+   - Provide a code snippet that demonstrates declaring variables of each type and initializing them with values.
+
+2. **References and Pointers**:
+   - Can you explain the difference between a pointer and a reference in C++? How would you use them differently in program design?
+   - Given this code snippet, identify any errors and explain how you would rectify them:
+     ```cpp
+     int x = 10;
+     int &ref = x;
+     int *ptr = &ref;
+     *ptr = 20;
+     ```
+
+3. **Structuring Programs**:
+   - How would you organize a C++ program across multiple files? What is the significance of using header (`.h`) and implementation (`.cpp`) files?
+   - Write a basic example that includes a header file and an implementation file for a simple class `Calculator`.
+
+4. **Memory Management**:
+   - Explain the use of `new` and `delete` in C++. Provide an example code snippet demonstrating dynamic memory allocation and deallocation.
+   - What issues could arise if `delete` is not used correctly? How can you mitigate such risks?
+
+5. **Object-Oriented Concepts**:
+   - Discuss the principles of encapsulation and inheritance in C++. How do they benefit program design?
+   - Write a simple C++ class demonstrating public inheritance. Describe any potential pitfalls when using inheritance.
+
+6. **STL Containers and Algorithms**:
+   - Explain the use cases for `std::vector`, `std::array`, and `std::string`. How do you decide which one to use?
+   - Given an array of integers, demonstrate how you would use `std::sort` to sort the array in ascending order.
+
+7. **Unit Testing**:
+   - Why is unit testing important in software development? How would you set up a basic unit test using Google Test for a simple function in C++?
+   - Provide a small code snippet of a function and a corresponding Google Test case.
+
+8. **Compiling and Linking**:
+   - Describe the steps involved in compiling and linking a C++ program using `g++`. What errors might arise during these steps, and how would you resolve them?
+
+9. **Error Handling**:
+   - Explain the use of try/catch blocks for error handling in C++. Provide an example demonstrating their use when handling potential divide-by-zero errors.
+
+10. **Modern C++ Features**:
+    - What are range-based for loops, and how do they differ from traditional for loops? Provide an example to illustrate their use.
+    - Discuss the usefulness of the `auto` keyword in C++. When would you use it in your code?
+
+These questions are designed to assess a candidate's foundational understanding of C++ at a BASIC proficiency level, ensuring they can handle typical challenges they might face early in their career.

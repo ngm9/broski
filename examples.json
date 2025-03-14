@@ -1,0 +1,134 @@
+```json
+[
+    {
+        "question_id": "1",
+        "type": "Coding",
+        "created_at": "2023-10-10T10:00:00Z",
+        "language_agnostic": False,
+        "question_blob_en": {
+            "question": "Write a C++ program that uses a class `Rectangle` to calculate the area and perimeter of a rectangle. The program should demonstrate encapsulation by keeping the length and width as private members. Include constructors, a destructor, and member functions to set dimensions and calculate area and perimeter.",
+            "options": [],
+            "answer": "A complete answer will include a class definition with private members, member functions for setting dimensions and calculating area and perimeter, and constructor/destructor implementations.",
+            "hints": "Focus on how objects are structured in C++ classes and the importance of keeping data encapsulated."
+        },
+        "criterias": ["bd15a4af-bf72-4486-9148-ef3a8e65bcaf"]
+    },
+    {
+        "question_id": "2",
+        "type": "Coding",
+        "created_at": "2023-10-10T10:05:00Z",
+        "language_agnostic": False,
+        "question_blob_en": {
+            "question": "Implement a simple C++ program that demonstrates the use of pointers and references. The program should swap two integer values using both a pointer swap function and a reference swap function.",
+            "options": [],
+            "answer": "A well-structured answer will provide two functions, one utilizing pointers and another using references to swap values, along with a demonstration of both functions.",
+            "hints": "Consider how pointers and references differ in terms of syntax and usage in C++."
+        },
+        "criterias": ["bd15a4af-bf72-4486-9148-ef3a8e65bcaf"]
+    },
+    {
+        "question_id": "3",
+        "type": "Coding",
+        "created_at": "2023-10-10T10:10:00Z",
+        "language_agnostic": False,
+        "question_blob_en": {
+            "question": "Create a C++ application that reads a list of integers from a file, stores them in a `std::vector`, calculates and prints the sum of these integers using the `std::accumulate` function.",
+            "options": [],
+            "answer": "The answer should include reading from a file into a vector, using STL algorithms to process the data, and appropriate error handling for file operations.",
+            "hints": "Utilize STL containers and algorithms to simplify the task."
+        },
+        "criterias": ["bd15a4af-bf72-4486-9148-ef3a8e65bcaf"]
+    },
+    {
+        "question_id": "4",
+        "type": "Problem Solving",
+        "created_at": "2023-10-10T10:15:00Z",
+        "language_agnostic": False,
+        "question_blob_en": {
+            "question": "Explain how you would handle memory management in C++ when developing a small application that heavily uses dynamic memory allocation. Highlight the role of RAII and pointers.",
+            "options": [],
+            "answer": "Effective memory management techniques would include using RAII principles, smart pointers for automatic memory handling, and careful allocation/deallocation.",
+            "hints": "Consider RAII and modern C++ features like smart pointers."
+        },
+        "criterias": ["bd15a4af-bf72-4486-9148-ef3a8e65bcaf"]
+    },
+    {
+        "question_id": "5",
+        "type": "Problem Solving",
+        "created_at": "2023-10-10T10:20:00Z",
+        "language_agnostic": False,
+        "question_blob_en": {
+            "question": "Discuss the advantages and potential pitfalls of using `std::vector` over traditional arrays in C++ when developing applications.",
+            "options": [],
+            "answer": "A good discussion should cover the benefits of dynamic sizing, better memory management, ease of use, and the trade-offs involving heap allocation and potential overhead.",
+            "hints": "Think about memory efficiency and operational flexibility provided by STL containers."
+        },
+        "criterias": ["bd15a4af-bf72-4486-9148-ef3a8e65bcaf"]
+    },
+    {
+        "question_id": "6",
+        "type": "Debugging",
+        "created_at": "2023-10-10T10:25:00Z",
+        "language_agnostic": False,
+        "question_blob_en": {
+            "question": "You encounter a segmentation fault in a C++ program involving a complex class structure. Describe the steps you would take to debug this issue using IDE tools and manual inspection.",
+            "options": [],
+            "answer": "Effective debugging would involve using tools like gdb for tracebacks, inspecting variable contents and pointers, and checking object memory management in the code.",
+            "hints": "Focus on debugging strategies and tools available for C++ in IDEs."
+        },
+        "criterias": ["bd15a4af-bf72-4486-9148-ef3a8e65bcaf"]
+    },
+    {
+        "question_id": "7",
+        "type": "Design",
+        "created_at": "2023-10-10T10:30:00Z",
+        "language_agnostic": False,
+        "question_blob_en": {
+            "question": "Outline a simple use case where employing a Singleton design pattern in C++ is justified. Provide a high-level explanation of its implementation in the context of that use case.",
+            "options": [],
+            "answer": "The explanation should include scenarios such as managing a configuration manager or logging system where a single instance is needed with controlled access.",
+            "hints": "Consider situations where resource management and global access are critical."
+        },
+        "criterias": ["bd15a4af-bf72-4486-9148-ef3a8e65bcaf"]
+    },
+    {
+        "question_id": "8",
+        "type": "Code Refactoring",
+        "created_at": "2023-10-10T10:35:00Z",
+        "language_agnostic": False,
+        "question_blob_en": {
+            "question": "Given a legacy C++ codebase using raw pointers extensively for memory management, propose a refactoring plan to modernize the codebase using C++11/14 features.",
+            "options": [],
+            "answer": "A refactoring proposal should include replacing raw pointers with smart pointers, adding exception safety, and adopting modern loop constructs and lambda functions where appropriate.",
+            "hints": "Focus on modern C++ features that enhance safety and readability."
+        },
+        "criterias": ["bd15a4af-bf72-4486-9148-ef3a8e65bcaf"]
+    },
+    {
+        "question_id": "9",
+        "type": "Version Control",
+        "created_at": "2023-10-10T10:40:00Z",
+        "language_agnostic": False,
+        "question_blob_en": {
+            "question": "Describe your approach to resolving a simple merge conflict in a C++ project using Git. What strategies and Git commands would you use?",
+            "options": [],
+            "answer": "A good resolution strategy will involve examining conflicting changes, understanding the context, using Git commands like `git merge`, `git rebase`, and resolving differences via manual edits.",
+            "hints": "Think about the typical workflow and tools provided by Git to handle conflicts."
+        },
+        "criterias": ["bd15a4af-bf72-4486-9148-ef3a8e65bcaf"]
+    },
+    {
+        "question_id": "10",
+        "type": "Unit Testing",
+        "created_at": "2023-10-10T10:45:00Z",
+        "language_agnostic": False,
+        "question_blob_en": {
+            "question": "Create a basic unit test using Google Test framework to verify the correctness of a `Calculator` class with methods for addition, subtraction, multiplication, and division. Ensure that you handle edge cases for division by zero.",
+            "options": [],
+            "answer": "A valid solution involves defining test cases for each method, particularly focusing on edge cases such as zero or negative inputs, using Google Test assertions.",
+            "hints": "Consider the importance of edge cases and exception handling in unit tests."
+        },
+        "criterias": ["bd15a4af-bf72-4486-9148-ef3a8e65bcaf"]
+    }
+]
+```

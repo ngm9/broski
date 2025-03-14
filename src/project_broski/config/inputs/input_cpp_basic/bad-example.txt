@@ -1,0 +1,13 @@
+{
+    "question": "Analyze the SearchResults component. It currently fails to update the search results when the query changes. Explain why this is happening and outline the steps you would take to debug and fix this issue. How would you ensure that updates occur correctly whenever the query prop changes?\n\n
+javascript\nimport React from 'react';\n\nconst ProductGallery = ({ images }) => {\n  return (\n    <div className=\"gallery\">\n      {images.map((img, index) => (\n        <img key={index} src={img.url} alt={img.alt} />\n      ))}\n    </div>\n  );\n};\n\nexport default ProductGallery;
+",
+    "answer": "A qualified response would discuss using performance profiling tools like React Profiler to identify rendering bottlenecks. It would suggest strategies such as lazy loading images, using IntersectionObserver for lazy-loading, implementing image caching strategies, and optimizing image sizes or formats for fast loading times.",
+    "competencies": ["React - Component-based Architecture"],
+    "reasoning": "Although in ReactJs but the following reasons make it a bad question: 1. This question is poorly suited for assessing a senior React developer’s skills, as it is too basic and only tests superficial knowledge of React dependency array."
+}
+{
+  "question": "Here is a code snippet from an API in .NET Core that retrieves orders. There is a syntax error in this code. Please identify the error and correct it:\n\n```csharp\n[HttpGet]\npublic async Task<IActionResult> GetOrders()\n{\n    using (var context = new AppDbContext())\n    {\n        var orders = await context.Orders;\n        return Ok(orders);\n    }\n}\n```",
+  "reasoning": "Although the above is in .NET or C# the following reasons make it a bad question: 1. Asking for syntax error or some kind of a trick question in code snippet is NOT a good question. 2. The question does not have long enough code snippet and the quality of question is very low."
+  "competencies": ["Python - advanced"]
+}

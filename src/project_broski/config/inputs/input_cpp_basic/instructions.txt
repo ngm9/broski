@@ -1,0 +1,63 @@
+Your OUPUT FORMAT:
+{
+    "question_id": <unique uuid() for the question>,
+    "type": MCQ or AudioInput,
+    "created_at": <timestampz of now()>,
+    "language_agnostic": True if any one of the criterias is a competency that is language agnostic e.g. data structures, algorithms and some tools like selenium etc. False otherwise
+    "question_blob_en": [
+        "question": <question text>,
+        "code": "" if language_agnostic is False, else if language_agnostic is True, then the following JSON object that contains code snippets for different languages. The langugages are depending on the further instructions:
+            {
+                "python": <python code>,
+                "javascript": <javascript code>
+                ...
+            },
+        "options": If MCQ, then an array of options
+        "answer": if MCQ, then the index of the correct answer among the options, If AudioInput a suggestion on what a good answer must include exhaustively
+        "hints": if AudioInput, then a single line hint on what a good answer must include
+        "definitions": A JSON dictionary of terminologies that are might be difficult to understand, highly specific to the competency, advanced terminologies or jargons - their one line definitions.
+    ]
+    "criterias": <JSON array of competency IDs given in the input>
+} 
+
+INSTRUCTIONS:
+- "type": 
+     + MCQ type of questions must have 1 correct answer. The other 3 options MUST be realistic and almost close to the correct answer. 
+     + AudioInput type of questions must keep in mind that the user will be asked to provide an audio answer. The evaluation of the audio answer will need a clear and specific ask towards the end of the question
+
+"question" - must be clear and exhaustive. Must have a clear and specific ask from the candidate. Depending on the question, the answer will be evaluated. 
+    + Scenario & CodeScenario questions must explain the scenario clearly and concisely. The question scenario must be clearly laid out, ensuring that all facts, figures, company names, individual names, etc., are historically accurate and relevant to the context. 
+    + The complexity of the code snippet and the question must align with the proficiency level required in the competency definition, ensuring that no two questions generated are similar. 
+    + For BEGINNER and BASIC and INTERMEDIATE levels of proficiency, the questions must be more specific and less open ended. The scenarios must also be easily digestible for these levels.
+    + For ADVANCED and EXPERT levels of proficiency, the questions must be more open ended, require application of fundamental concepts and complex according to proficiency. The scenarios must also be complex and challenging for these levels.
+    + Questions should always present realistic scenarios.
+    + The question must NOT include hints. The hints will be provided in the "hints" field. Additionally, ensure that there are no broken lines in the markdown code snippet, as this may hinder the creation of the JSON file and lead to errors.
+    + The question should have a well-structured indented format, with code elements properly spaced and never appearing on the same line when nested. Add necessary line breaks and spaces for clarity.
+    + Ensure that all questions and scenarios adhere to the latest best practices and language versions. Strictly avoid using outdated versions of the language in the code scenarios.
+    + Questions should have a definite correct answer. A good question is a logical bug or functional error and not trick questions that are syntactic errors. Please DO NOT give syntactical errors questions
+
+"code" - The code snippet must be a valid python or javascript code snippet.
+    + Generate multiple code snippets if the "language_agnostic" is True. prioritze Python and Javascript. Add other langugages depending upon further instructions.
+    + Must ground the question in a real world scenario.
+    + For different languages use introduce a new key value pair for the language.
+    + The code snippets must be valid and executable.
+
+"options" - If MCQ, the options need to be long and exhaustive. Each option must be 2-3 lines. 
+
+- "answer"
+    + if MCQ - the answer must be the index of the correct answer among the options
+    + if AudioInput - a suggested correct answer that shows what a good answer must include. 3-4 lines at max.
+
+- "hints"
+    + if AudioInput - a single line hint on what a good answer must include. These hints must NOT give away the answer, but gently nudge the candidate in the right direction.
+
+- "definitions"
+    + if AudioInput - a dictionary of definitions of terms that are specific to the question. These definitions MUST be correct but concise in 1 line. 
+    + They need to be terminologies mentioned in the question
+    + The terminologies HAVE to be difficult to understand or are advanced terminologies or jargons. Do NOT force fit a definition for a term that is easy to understand.
+    + e.g. {
+        "Polymorphism": "The ability of an object or function to take on many forms",
+        "Python Global Interpreter Lock": "A concept in Python that ensures thread safety by allowing only one thread to execute at a time, preventing race conditions and ensuring data consistency."
+    }
+
+- "competencies": a JSON array of competencies for which the question is relevant for. This can be from 0-3 in length.

@@ -1,0 +1,32 @@
+Create 10 questions in the CodeScenario format with an AudioInput type that address the following C++ concepts. 
+The difficulty should be basic level, and the code shown in the scenarios should be sufficiently complex. This is NOT a language agnostic question, so please generate code for only C++
+
+The scenarios should cover Language Fundamentals
+
+    Explain how references differ from pointers; when to use each.
+    Show basic understanding of stack vs. heap.
+
+Class & Object Basics
+
+    Explain how constructors and destructors work.
+    Describe how to create basic class hierarchies.
+
+STL Knowledge
+
+    List some commonly used containers and their typical usage scenarios.
+    Write a short snippet to iterate over an std::vector and print values.
+
+Debugging & Memory Management
+
+    Interpret a simple snippet that causes a segmentation fault and propose a fix.
+    Identify how to prevent memory leaks in a short example.
+
+Project Organization
+
+    Show how to separate header and source files.
+    Demonstrate a simple CMake usage (optional but beneficial).
+
+Remember your instructions for BASIC level of proficiency -- the quesitons cannot be open ended, the scenarios need to be specific and simple, the final ask from the candidate needs to be grounded in real code shown in the snippet. 
+Questions CANNOT be vague and asking the candidate to think too much. It should be about reading the code and answering the question.
+
+NOTE: Please don't make the questions misleading - when there is no bug present, don't ask the candidate to find a bug. Also, NO SYNTACTIC BUGS, EVER! 

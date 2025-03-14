@@ -1,0 +1,9 @@
+[
+  {
+    "competency_id": "bd15a4af-bf72-4486-9148-ef3a8e65bcaf",
+    "scope": "BASIC proficiency in C++ (1–2 years of experience) means a solid grasp of syntax, data types (int, float, double, char, bool), references, and pointers, along with how to structure programs across multiple files. The developer can write well-organized functions and classes, manage memory using new/delete, and has a high-level idea of RAII, but typically needs guidance on more advanced patterns. They understand object-oriented concepts like encapsulation and simple inheritance, can create constructors/destructors, and have a working knowledge of public inheritance. They can use fundamental STL containers (std::vector, std::array, std::string) and algorithms (std::sort, std::find), rely on an IDE for debugging (breakpoints, variable inspection), and are comfortable with basic error handling (try/catch). They know how to compile and link programs via g++/clang++ or within an IDE, have some experience with build systems like CMake, and can handle straightforward compiler/linker issues. They have started using Git for basic version control operations (clone, commit, push) and can resolve simple merge conflicts. They are aware of modern C++ features (range-based for loops, auto) but do not rely heavily on advanced language constructs like lambdas, move semantics, or templates. They can implement or extend small features, fix simpler bugs, and refactor sections of code, following basic coding standards. They are mindful of performance regarding unnecessary copies and know the basics of unit testing with frameworks like Google Test. They may have limited familiarity with simple design patterns (e.g., Singleton) but largely rely on direct guidance for more complex patterns or architectural decisions."
+    "proficiency": "BASIC",
+    "name": "C++",
+    "language_agnostic": False
+  }
+]

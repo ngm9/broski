@@ -1,0 +1,24 @@
+1. **The Company's Main Business and Culture**:
+   - The company operates in the Computing and Information Technology sector, focusing on translating requirements into high-quality code and delivering superior software products. They aim to establish themselves as the best choice by offering a full spectrum of IT services. The company embraces an open, remote, and agile work culture, emphasizing the importance of technology, people, processes, and strategy. They strive to maintain continuous growth alongside an evolving market landscape.
+
+2. **Key Responsibilities for the Role**:
+   - The role requires close collaboration with front-end developers, product managers, and other stakeholders to design and develop efficient and scalable back-end solutions.
+   - Development and maintenance of server-side logic using Node.js and Express.js are essential to ensure high performance and responsiveness.
+   - The role involves contributing to the design and implementation of RESTful APIs for seamless integration with front-end systems.
+   - A critical responsibility is implementing security and data protection measures, ensuring compliance with industry standards and best practices.
+   - Optimizing applications for speed and scalability, along with addressing performance bottlenecks, is necessary.
+   - Collaboration with DevOps teams to establish efficient deployment and monitoring processes is important.
+   - Participation in code reviews to ensure code quality and maintainability by providing constructive feedback is expected.
+   - The role includes troubleshooting and debugging technical challenges to provide timely resolutions.
+   - Mentoring junior developers to foster skill growth and facilitate knowledge sharing within the team is crucial.
+
+3. **Required Skills and Experience Level**:
+   - Proficiency in backend development with a strong command over Node.js and Express.js.
+   - Experience designing and implementing RESTful APIs.
+   - Knowledge and application of security protocols and data protection measures.
+   - Ability to optimize application performance and resolve scalability issues.
+   - Experience working in an Agile environment and collaborating with DevOps for deployment and monitoring.
+   - Capability to engage in and contribute to code reviews.
+   - Experience in mentoring junior developers, facilitating their growth and development.
+
+The role is tailored for individuals who are adept at backend development, enjoy collaborative work environments, and are committed to delivering high-quality software solutions.

@@ -1,0 +1,41 @@
+```json
+[
+    {
+        "question_id": "c943b514-f8f8-481d-a977-81254fa92eb8",
+        "type": "AudioInput",
+        "created_at": "2023-10-05T14:48:00Z",
+        "language_agnostic": True,
+        "question_blob_en": {
+            "question": "Consider a scenario where you are required to improve the performance of a Node.js application handling a high volume of simultaneous API requests. The application currently faces latency issues under load. Explain the steps you would take to identify performance bottlenecks and optimize application responsiveness.",
+            "options": [],
+            "answer": "A good answer should include using profiling tools to identify slow parts of the code, adjusting database queries for efficiency, implementing caching strategies where necessary, and considering load balancing or horizontal scaling if applicable.",
+            "hints": "Think about what tools and techniques you'd use to analyze and enhance performance.",
+            "definitions": {
+                "Profiling": "A form of dynamic program analysis that measures memory, CPU time, or other parameters.",
+                "Load Balancing": "The process of distributing network or application traffic across multiple servers to ensure no single server becomes overwhelmed.",
+                "Horizontal Scaling": "Adding more machines or nodes to your pool of resources to improve performance."
+            }
+        },
+        "criterias": ["bd15a4af-bf72-4486-9148-ef3a8e65bcaf"]
+    },
+    {
+        "question_id": "d394f337-71e3-4b6c-9d1b-171b15e73985",
+        "type": "AudioInput",
+        "created_at": "2023-10-05T14:50:00Z",
+        "language_agnostic": True,
+        "question_blob_en": {
+            "question": "You've identified that a Node.js RESTful API is vulnerable to SQL injection attacks. Describe how you would secure the API to prevent these types of attacks.",
+            "options": [],
+            "answer": "A good answer should discuss parameterized queries, using ORM/ODM tools that handle SQL safety, input validation and sanitization, and implementing security middleware.",
+            "hints": "Think about prevention techniques and tools to ensure data integrity and security.",
+            "definitions": {
+                "SQL Injection": "A code injection technique that might destroy your database by executing malicious SQL statements.",
+                "ORM/ODM": "Object-Relational Mapping/Object-Document Mapping is a technique for converting data between incompatible type systems."
+            }
+        },
+        "criterias": ["bd15a4af-bf72-4486-9148-ef3a8e65bcaf"]
+    }
+]
+```
+
+This JSON format addresses the required competencies, matches the job responsibilities and required skills, and reflects the understanding of the context provided.

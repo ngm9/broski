@@ -1,0 +1,17 @@
+RESPONSIBILITIES AND DUTIES:
+A. Collaborate closely with front-end developers, product managers, and other
+stakeholders to design and implement efficient and scalable back-end solutions.
+B. Develop and maintain server-side logic using Node.js and Express.js, ensuring high
+performance and responsiveness of applications.
+C. Contribute to the design and implementation of RESTful APIs for seamless integration
+with front-end interfaces.
+D. Implement security and data protection measures, ensuring compliance with industry
+standards and best practices.
+E. Optimize applications for maximum speed and scalability, addressing potential
+bottlenecks and performance issues.
+F. Collaborate with DevOps teams to establish efficient deployment and monitoring
+processes.
+G. Participate in code reviews and provide constructive feedback to ensure code quality
+and maintainability.
+H. Troubleshoot and debug issues, providing timely resolutions to technical challenges.
+I. Mentor junior developers, fostering skill growth and knowledge sharing within the team.

@@ -1,0 +1,14 @@
+QUESTION FORMAT
+"Code Scenario"
+Explanation:
+This kind of a scenario question is about giving a detailed code. The code MUST be relevant to the question. The code must be sufficiently complex, according to the proficiency. It must span across multiple files. The code must be written in markdown, sufficiently complex pieces of code (maybe spanning multiple files) and then the question asks to find logical fallacies in the code, any bugs or places where the code will break under a lot of scale or asking for approaches to improve the code. The code must be structured to reflect common complexities in real-world software applications. The provided code should simulate typical challenges found in production-scale applications.
+
+
+Some types of codeScenario questions are as follows. Pick one of these:
+1. Identify Bugs: Provide code with a subtle bug and ask the reader to identify issues.
+2. Identify Inefficiencies: Provide code with an inefficiency and ask the reader to explain how they would address it.
+3. Suggest Optimizations: Show code with room for optimization, asking for suggested improvements.
+4. Present a scenario, show the code and ask for approach to measure performance
+5. Show code and show output scenario, ask for the approach to reach there
+6. Show code and show failure output and ask for debugging approach
+
